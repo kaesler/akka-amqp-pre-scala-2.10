@@ -29,6 +29,7 @@ object Scratch extends App {
   consumer.awaitStart()
 
   val publisher = connection.newStashingPublisher(DefaultExchange)
+  publisher.awaitStart()
 
   for (i ← 1 to nrOfMessages) {
     val msg = "Message[%s]".format(i)
@@ -38,4 +39,6 @@ object Scratch extends App {
 
   latch.await()
   connection.dispose()
+  system.shutdown()
+  sys.exit
 }

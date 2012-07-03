@@ -38,7 +38,7 @@ class DurableConsumer(durableConnection: DurableConnection,
                       autoAcknowledge: Boolean,
                       queueBindings: QueueBinding*) extends DurableChannel(durableConnection) {
   outer ⇒
-
+  
   private val log = Logging(durableConnection.connectionProperties.system, this.getClass)
 
   val consumerTag = new AtomicReference[Option[String]](None)
