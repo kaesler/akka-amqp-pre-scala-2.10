@@ -13,5 +13,5 @@
 	<classpathentry kind="lib" path="/Users/kesler/.ivy2/cache/com.typesafe.akka/akka-testkit/jars/akka-testkit-2.0.2.jar"/>
 	<classpathentry kind="lib" path="/Users/kesler/.ivy2/cache/org.mockito/mockito-all/jars/mockito-all-1.9.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="target/scala-2.9.2/classes"/>
 </classpath>
