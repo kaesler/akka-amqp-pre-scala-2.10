@@ -2,7 +2,7 @@ import sbt._
 
 object dependencies {
 
-  def AmqpClient = "com.rabbitmq" % "amqp-client" % "2.8.2"
+  def AmqpClient = "com.rabbitmq" % "amqp-client" % "2.8.4"
   def AkkaActor = "com.typesafe.akka" % "akka-actor" % "2.0.2"
   val scalatest = "org.scalatest" % "scalatest_2.9.0" % "1.8"
   def JUnit = "junit" % "junit" % "4.7" % "test"
