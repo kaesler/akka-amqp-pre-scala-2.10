@@ -8,14 +8,14 @@ object build extends Build {
   	resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/",
     organization := "com.github.kaesler",
     version			 := "2.1-SNAPSHOT",
-    scalaVersion := "2.9.2"
+    scalaVersion := "2.9.3"
   )
 
   lazy val root = Project(
     id        = "akka-amqp",
     base      = file("."),
     settings = standardSettings ++ Seq(
-    	libraryDependencies ++= Seq( 
+    	libraryDependencies ++= Seq(
 	      AmqpClient,
           AkkaActor,
 	      scalatest,
